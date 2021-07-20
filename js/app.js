@@ -6,15 +6,16 @@ const container = document.getElementById('container');
 const searchBar = document.getElementById('search');
 const filterDropdown = document.getElementById('dropdown');
 // let response = await getCountriesFromApi();
-const countriesFromLocalStorage = localStorage.getItem('countries');
-let response = JSON.parse(countriesFromLocalStorage);
 
 const getCountries = async (sValue = '', fValue = '') => {
 	// response = await getCountriesFromApi();
+	const countriesFromLocalStorage = localStorage.getItem('countries');
+	const response = JSON.parse(countriesFromLocalStorage);
 	const searchedValue = sValue.toLowerCase();
 	const filteredItem = fValue.toLowerCase();
 
 	if ((!searchedValue && !filteredItem) || filteredItem === 'all') {
+		console.log(response);
 		response.forEach(country => {
 			if (country.name.length > 32) {
 				country.name = country.name.substring(0, 31) + ' ...';
