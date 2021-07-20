@@ -37,11 +37,11 @@ p {
 }
 
 .card {
-	border: 0;
+	/* border: 0;
 	box-shadow: 0 5px 20px rgba(158, 109, 109, 0.288);
 	letter-spacing: 0.014em;
 	max-height: 332px;
-	overflow: hidden;
+	overflow: hidden; */
 }
 
 .card-body {
