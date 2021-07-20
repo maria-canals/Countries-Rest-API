@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--text-color-main: black;
+	--text-color-secondary: white;
+	--first-bg: white;
+}
+
+body {
+	background-color: var(--first-bg);
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+
+p {
+	margin: 0.5rem;
+}
+
+.dark_mode {
+	--text-color-main: white;
+	--first-bg: rgb(3, 15, 43);
+}
+
+.header_title {
+	color: var(--text-color-main);
+}
+
+.header_button {
+	border: 0;
+	color: var(--text-color-main);
+	background-color: var(--first-bg);
+}
+
+.card {
+	border: 0;
+	box-shadow: 0 5px 20px rgba(158, 109, 109, 0.288);
+	letter-spacing: 0.014em;
+	max-height: 332px;
+	overflow: hidden;
+}
+
+.card-body {
+	padding: 1rem;
+}
+
+.card:hover {
+	cursor: pointer;
+}
+
+.card-img-top {
+	height: 170px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.card {
+	background-color: var(--first-bg);
+	color: var(--text-color-main);
+}
+
+.navbar {
+	height: 8rem;
+}
+
+.searchbar {
+	background-color: var(--first-bg);
+	height: 40px;
+	border-radius: 10px;
+	padding: 10px;
+	width: 50%;
+	border: transparent;
+	box-shadow: 0 5px 20px rgba(158, 109, 109, 0.288);
+}
+
+.dropdown,
+.dropdown > .form-select {
+	background-color: var(--first-bg);
+	box-shadow: 0 5px 20px rgba(158, 109, 109, 0.288);
+	border-radius: 10px;
+	outline: none;
+	color: var(--text-color-main);
+}
+
+.searchbar_input {
+	width: 90%;
+}
+
+.searchbar,
+.searchbar_input > input {
+	background-color: var(--first-bg);
+	color: var(--text-color-main);
+	border: 0;
+}
+
+.form-control:focus {
+	background-color: var(--first-bg);
+	color: var(--text-color-main);
+}
+
+.form-select {
+	border: 1px solid transparent;
+}
+
+.form-control:focus {
+	border-color: transparent;
+	box-shadow: none;
+}
+
+.form-select:focus {
+	border-color: transparent;
+	outline: 0;
+	box-shadow: none;
+}
+
+.modal-body,
+.modal-card-img-top {
+	text-align: center;
+}
+
+.modal-content {
+	background-color: var(--first-bg);
+	color: var(--text-color-main);
+}
+
+.btn-close {
+	background-color: white;
+}
+
+@media (min-width: 600px) {
+	.modal-content {
+		width: 150%;
+	}
+	.modal-body {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+	}
+	.modal-card-body {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		margin: 1rem;
+	}
+	.modal-title {
+		margin-left: 1.5rem;
+	}
+}
