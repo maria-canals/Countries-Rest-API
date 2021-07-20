@@ -58,4 +58,4 @@ const renderCountry = selectedCountry => {
 	}
 };
 
-export { showDetails, filterData, renderCountry };
+export { showDetails };

@@ -1,14 +1,16 @@
-import { getCountriesFromApi } from './requests.js';
+// import { getCountriesFromApi } from './requests.js';
 import { clearContainer, numberWithDots } from '../utils/utils.js';
 import { showDetails } from './details.js';
 
 const container = document.getElementById('container');
 const searchBar = document.getElementById('search');
 const filterDropdown = document.getElementById('dropdown');
-let response = await getCountriesFromApi();
+// let response = await getCountriesFromApi();
+const countriesFromLocalStorage = localStorage.getItem('countries');
+let response = JSON.parse(countriesFromLocalStorage);
 
 const getCountries = async (sValue = '', fValue = '') => {
-	response = await getCountriesFromApi();
+	// response = await getCountriesFromApi();
 	const searchedValue = sValue.toLowerCase();
 	const filteredItem = fValue.toLowerCase();
 
