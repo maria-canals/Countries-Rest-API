@@ -1,15 +1,11 @@
-import { getCountriesFromApi } from './requests.js';
-import { numberWithDots } from '../utils/utils.js';
+// import { getCountriesFromApi } from './requests.js';
+// import { numberWithDots } from '../utils/utils.js';
 
-const modalTitle = document.querySelector('.modal-title');
-const modalBody = document.querySelector('.modal-body');
+// const modalTitle = document.querySelector('.modal-title');
+// const modalBody = document.querySelector('.modal-body');
 
-const response = await getCountriesFromApi();
-console.log(response, 'aqui en details');
-
-const showDetails = () => {
-	console.log('hola');
-};
+// const response = await getCountriesFromApi();
+// console.log(response, 'aqui en details');
 
 // const showDetails = event => {
 // 	let selectedCountry;
@@ -63,4 +59,4 @@ const showDetails = () => {
 // 	}
 // };
 
-export { showDetails };
+// export { showDetails };
