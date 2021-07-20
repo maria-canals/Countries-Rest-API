@@ -1,21 +1,17 @@
-// import { getCountriesFromApi } from './requests.js';
+import { getCountriesFromApi } from './requests.js';
 import { clearContainer, numberWithDots } from '../utils/utils.js';
 import { showDetails } from './details.js';
 
 const container = document.getElementById('container');
 const searchBar = document.getElementById('search');
 const filterDropdown = document.getElementById('dropdown');
-// let response = await getCountriesFromApi();
 
 const getCountries = async (sValue = '', fValue = '') => {
-	// response = await getCountriesFromApi();
-	const countriesFromLocalStorage = localStorage.getItem('countries');
-	const response = JSON.parse(countriesFromLocalStorage);
+	const response = await getCountriesFromApi();
 	const searchedValue = sValue.toLowerCase();
 	const filteredItem = fValue.toLowerCase();
 
 	if ((!searchedValue && !filteredItem) || filteredItem === 'all') {
-		console.log(response);
 		response.forEach(country => {
 			if (country.name.length > 32) {
 				country.name = country.name.substring(0, 31) + ' ...';
