@@ -42,6 +42,8 @@ p {
 	letter-spacing: 0.014em;
 	max-height: 332px;
 	overflow: hidden;
+	background-color: var(--first-bg);
+	color: var(--text-color-main);
 }
 
 .card-body {
@@ -56,11 +58,6 @@ p {
 	height: 170px;
 	width: 100%;
 	object-fit: cover;
-}
-
-.card {
-	background-color: var(--first-bg);
-	color: var(--text-color-main);
 }
 
 .navbar {
