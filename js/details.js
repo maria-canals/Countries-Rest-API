@@ -1,10 +1,10 @@
-import { getCountriesFromApi } from './requests.js';
 import { numberWithDots } from '../utils/utils.js';
-
 const modalTitle = document.querySelector('.modal-title');
 const modalBody = document.querySelector('.modal-body');
 
-const response = await getCountriesFromApi();
+const countriesFromLocalStorage = localStorage.getItem('countries');
+
+const response = JSON.parse(countriesFromLocalStorage);
 
 const showDetails = event => {
 	let selectedCountry;
@@ -58,4 +58,4 @@ const renderCountry = selectedCountry => {
 	}
 };
 
-export { showDetails };
+export { showDetails, filterData, renderCountry };

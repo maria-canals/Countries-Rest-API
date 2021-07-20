@@ -5,9 +5,10 @@ import { showDetails } from './details.js';
 const container = document.getElementById('container');
 const searchBar = document.getElementById('search');
 const filterDropdown = document.getElementById('dropdown');
+let response = await getCountriesFromApi();
 
 const getCountries = async (sValue = '', fValue = '') => {
-	const response = await getCountriesFromApi();
+	response = await getCountriesFromApi();
 	const searchedValue = sValue.toLowerCase();
 	const filteredItem = fValue.toLowerCase();
 
