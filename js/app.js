@@ -100,7 +100,7 @@ const createCountryCard = (cName, cPopulation, cFlag, cRegion, cCapital) => {
         </div>
     </div>
     `;
-	card.setAttribute('type', 'button');
+	// card.setAttribute('type', 'button');
 	card.setAttribute('data-bs-toggle', 'modal');
 	card.setAttribute('data-bs-target', '#exampleModal');
 	// card.addEventListener('click', showDetails);
