@@ -1,4 +1,4 @@
-const getCountriesFromApi = async () => {
+const getCountriesFromApi = () => {
 	return axios.get('https://restcountries.eu/rest/v2/all').then(response => {
 		return response.data;
 	});
