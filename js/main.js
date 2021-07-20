@@ -1,0 +1,1 @@
+const mainjs = 'main.js';

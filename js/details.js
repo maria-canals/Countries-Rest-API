@@ -1,14 +1,8 @@
-// import { getCountriesFromApi } from './requests.js';
+import { getCountriesFromApi } from './requests.js';
 import { numberWithDots } from '../utils/utils.js';
 
 const modalTitle = document.querySelector('.modal-title');
 const modalBody = document.querySelector('.modal-body');
-
-const getCountriesFromApi = async () => {
-	let data = await fetch('https://restcountries.eu/rest/v2/all');
-	let response = await data.json();
-	return response;
-};
 
 const response = await getCountriesFromApi();
 

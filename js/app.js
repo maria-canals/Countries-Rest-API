@@ -1,16 +1,10 @@
-// import { getCountriesFromApi } from './requests.js';
+import { getCountriesFromApi } from './requests.js';
 import { clearContainer, numberWithDots } from '../utils/utils.js';
 import { showDetails } from './details.js';
 
 const container = document.getElementById('container');
 const searchBar = document.getElementById('search');
 const filterDropdown = document.getElementById('dropdown');
-
-const getCountriesFromApi = async () => {
-	let data = await fetch('https://restcountries.eu/rest/v2/all');
-	let response = await data.json();
-	return response;
-};
 
 const getCountries = async (sValue = '', fValue = '') => {
 	const response = await getCountriesFromApi();
