@@ -90,7 +90,7 @@ const createCountryCard = (cName, cPopulation, cFlag, cRegion, cCapital) => {
 	cCapital === '' ? (cCapital = 'No capital') : cCapital;
 	let card = document.createElement('li');
 	card.innerHTML = `
-    <div class="card m-3" id="${cName}" style="width: 18.5rem;">
+    <button class="card m-3" id="${cName}" style="width: 18.5rem;">
         <img src="${cFlag}" class="card-img-top" alt="${cName}">
         <div class="card-body">
             <h5 class="card-title mt-2 text-center">${cName}</h5>
@@ -98,9 +98,8 @@ const createCountryCard = (cName, cPopulation, cFlag, cRegion, cCapital) => {
             <p class="card-text">Region: ${cRegion}</p>
             <p class="card-text">Capital: ${cCapital}</p>
         </div>
-    </div>
+    </button>
     `;
-	card.setAttribute('type', 'button');
 	card.setAttribute('data-bs-toggle', 'modal');
 	card.setAttribute('data-bs-target', '#exampleModal');
 	card.addEventListener('click', showDetails);

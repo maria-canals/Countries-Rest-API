@@ -83,6 +83,10 @@ p {
 	color: var(--text-color-main);
 }
 
+.dropdown:hover {
+	cursor: pointer;
+}
+
 .searchbar_input {
 	width: 90%;
 }
