@@ -37,11 +37,13 @@ p {
 }
 
 .card {
-	/* border: 0;
+	border: 0;
 	box-shadow: 0 5px 20px rgba(158, 109, 109, 0.288);
 	letter-spacing: 0.014em;
 	max-height: 332px;
-	overflow: hidden; */
+	overflow: hidden;
+	background-color: var(--first-bg);
+	color: var(--text-color-main);
 }
 
 .card-body {
@@ -56,11 +58,6 @@ p {
 	height: 170px;
 	width: 100%;
 	object-fit: cover;
-}
-
-.card {
-	background-color: var(--first-bg);
-	color: var(--text-color-main);
 }
 
 .navbar {
